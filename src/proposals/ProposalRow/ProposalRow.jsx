@@ -11,7 +11,7 @@ const withoutEventDefault = (callback) =>
     };
 
 const ProposalRow = ({ proposal, onStatusUpdate }) => {
-    console.log(getCallForPapers().then(res=>res))
+    console.log(getCallForPapers().then(res=>res.json()))
 
     const { id, title, status } = proposal;
     return (
