@@ -8,7 +8,7 @@ import "./ProposalList.css";
 
 const ProposalList = () => (
     <ul data-testid="proposal-list" className="ProposalList">
-        {[getTalks].map((proposal) => (
+        {[getTalks()].map((proposal) => (
             <li
                 key={proposal.id}
                 className="ProposalList__item"
