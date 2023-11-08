@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import ProposalRow from "../ProposalRow";
-import getTalks from '../../api'
+import { getTalks } from '../../api'
 import "./ProposalList.css";
 
 const ProposalList = () => (
     <ul data-testid="proposal-list" className="ProposalList">
-        {[].map((proposal) => (
+        {[getTalks].map((proposal) => (
             <li
                 key={proposal.id}
                 className="ProposalList__item"
@@ -19,7 +19,7 @@ const ProposalList = () => (
                 >
                     <ProposalRow
                         proposal={proposal}
-                        onStatusUpdate={() => {}}
+                        onStatusUpdate={() => { }}
                     />
                 </Link>
             </li>
