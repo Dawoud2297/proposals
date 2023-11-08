@@ -7,14 +7,14 @@ import "./ProposalList.css";
 
 const data = async () => {
     // const d = await getCallForPapers();
-    const d = getTalks;
+    const d = await getTalks();
     console.log(d)
     return d;
 }
 
 const ProposalList = () => (
     <ul data-testid="proposal-list" className="ProposalList">
-        {[getTalks()].map((proposal) => (
+        {[data()].map((proposal) => (
             <li
                 key={proposal.id}
                 className="ProposalList__item"
