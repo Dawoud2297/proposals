@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import ProposalRow from "../ProposalRow";
-
+import getTalks from '../../api'
 import "./ProposalList.css";
 
 const ProposalList = () => (
