@@ -2,6 +2,7 @@ import React from "react";
 import classNames from "classnames";
 
 import "./ProposalRow.css";
+import { getTalks, getCallForPapers } from '../../api'
 
 const withoutEventDefault = (callback) =>
     event => {
@@ -10,6 +11,8 @@ const withoutEventDefault = (callback) =>
     };
 
 const ProposalRow = ({ proposal, onStatusUpdate }) => {
+    console.log(getCallForPapers)
+
     const { id, title, status } = proposal;
     return (
         <div data-testid={`proposal-id-${id}`} className={classNames("ProposalRow", "ProposalRow--accepted")}>
