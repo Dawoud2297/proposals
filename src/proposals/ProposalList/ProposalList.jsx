@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import ProposalRow from "../ProposalRow";
 import { getTalks } from '../../api'
 import "./ProposalList.css";
+im
 
 const ProposalList = () => (
     <ul data-testid="proposal-list" className="ProposalList">
