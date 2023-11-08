@@ -5,6 +5,12 @@ import ProposalRow from "../ProposalRow";
 import { getTalks, getCallForPapers } from '../../api'
 import "./ProposalList.css";
 
+const data = async () => {
+    // const d = await getCallForPapers();
+    const d = getTalks;
+    console.log(d)
+    return d;
+}
 
 const ProposalList = () => (
     <ul data-testid="proposal-list" className="ProposalList">
