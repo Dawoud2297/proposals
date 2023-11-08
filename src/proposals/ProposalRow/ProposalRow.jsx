@@ -14,6 +14,7 @@ const ProposalRow = ({ proposal, onStatusUpdate }) => {
     // console.log(getCallForPapers())
     const data = async () => {
         const d = await getCallForPapers();
+        console.log(d)
         return d;
     }
     console.log(data())
