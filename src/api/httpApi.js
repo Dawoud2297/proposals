@@ -19,7 +19,7 @@ export const getTalk = (talkId) =>
  */
 export const getCallForPapers = () =>
     axios.get("/callForPapers")
-        .then(res => json(res.data));
+        .then(res => res.data);
 
 /**
  * @returns void
