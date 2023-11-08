@@ -2,11 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import ProposalRow from "../ProposalRow";
-import { getTalks } from '../../api'
+import { getTalks, getCallForPapers } from '../../api'
 import "./ProposalList.css";
-im
+
 
 const ProposalList = () => (
+    console.log()
     <ul data-testid="proposal-list" className="ProposalList">
         {[getTalks].map((proposal) => (
             <li
