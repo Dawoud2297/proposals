@@ -17,10 +17,10 @@ const ProposalList = () => (
                     className="ProposalList__item__link"
                     to={`/proposals`}
                 >
-                    {/* <ProposalRow
+                    <ProposalRow
                         proposal={proposal}
                         onStatusUpdate={() => {}}
-                    /> */}
+                    />
                 </Link>
             </li>
         ))}
