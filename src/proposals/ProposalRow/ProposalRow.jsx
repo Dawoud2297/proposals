@@ -11,7 +11,7 @@ const withoutEventDefault = (callback) =>
     };
 
 const ProposalRow = ({ proposal, onStatusUpdate }) => {
-    console.log(Promise.resolve(getCallForPapers()))
+    console.log(getCallForPapers().byTalkId)
 
     const { id, title, status } = proposal;
     return (
